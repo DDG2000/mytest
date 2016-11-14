@@ -10,10 +10,66 @@
     <!--top-->
     <div class="reg-top">
         <div class="w1200 cc">
-            <a href="#"></a>
+            <a href="#" class="logo fl"><img src="img/logo.png"></a>
+            <div class="fl fl-li tab">
+                <li class="active"><a href="#">填写资料</a></li>
+                <li class="success"><a href="#"><i></i>注册成功</a></li>
+            </div>
         </div>
     </div>
 
     <!--top-->
+    <div class="reg-form w1200 cc">
+        <form action="sui-validate">
+            <div class="form-item">
+                <label for="">*手机号</label>
+                <input type="text" data-rules="required|mobile" placeholder="手机号码" data-empty-msg="手机号码不能个为空">
+            </div>
+            <div class="form-item">
+                <label for="">*验证码</label>
+                <input type="text" class="small" data-rules="required" data-empty-msg="请输入验证码">
+                <img src="#" alt="">
+                <span class="re">刷新</span>
+            </div>
+            <div class="form-item">
+                <label for="">*短信验证码</label>
+                <input type="text" name="" id="" class="small" data-rules="required" data-empty-msg="短信验证码不能为空">
+                <a href="javascript:;" class="menu">获取验证码</a>
+            </div>
+            <div class="form-item">
+                <label for="">*设置密码</label>
+                <input type="password" name="" id="" class="password" placeholder="6~18为密码" data-rules="required|minlength=6|maxlength=18" data-empty-msg="密码不能为空" >
+            </div>
+            <div class="form-item">
+                <label for="">*确认密码</label>
+                <input type="password" placeholder="6~18位密码" data-rules="required|match=password" data-empty-msg="确认密码"></input>
+
+            </div>
+            <div class="form-item">
+                <label for="">姓名</label>
+                <input type="text" placeholder="请输入姓名" data-rules="required" data-empty-msg="姓名不能为空">
+            </div>
+            <div class="form-licens">
+                <input type="checkbox" name="" id="licens">
+                <label for="licens"><i></i>阅读并同意</label><a href="#">《用户服务协议》</a>
+            </div>
+            <button type="submit" class="form-btn">注册</button>
+        </form>
+    </div>
+    <!--footer-->
+    <div class="footer reg-footer ">
+        <ul class="ib-li ">
+            <li><a href="#">关于我们</a></li> |
+            <li><a href="#">法律声明</a></li> |
+            <li><a href="#">诚聘英才</a></li> |
+            <li><a href="#">投资洽谈</a></li> |
+            <li><a href="#">联系我们</a></li> |
+            <li><a href="#">常见问题</a></li>
+        </ul>
+        <div class="cprt">版权所有  2016 云采网   蜀ICP备：1546546766号  蜀ICP备1630394号</div>
+    </div>
+    <!--footer-->
+    <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="sui/sui.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
