@@ -3,27 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <title>找货下单(表单页)</title>
-    <link rel="stylesheet" href="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <!--top-->
-        <div class="top">
-            <div class="w1200 cc cb">
-                <div class="fl top-left">
-                    <a href="#"><i></i></a>欢迎你!&nbsp;JACK <a href="#" class="exit">[退出]</a>
-                </div>
-                <div class="fr top-right">
-                    <ul>
-                        <li class="menu menu-toggle"><a href="#">我的工作台<i class="up"></i></a></li>
-                        <li class="menu"><a href="#"><i class="message new"></i>消息</a></li>
-                        <li class="menu menu-help"><a href="#">帮助中心</a></li>
-                        <li class="menu"><a href="">网站导航</a></li>
-                        <li class="menu menu-tel">服务热线 <span class="tel">400-400-4000</span></li>
-                    </ul>
-                </div>
+<!--top-->
+<div class="top">
+    <div class="w1200 cc cb">
+        <div class="fl top-left">
+            <a href="#"><i></i></a>欢迎你!&nbsp;JACK <a href="#" class="exit">[退出]</a>
+            <div class="top-right-slideNav db-a">
+                <a href="#" class="">我的项目</a>
+                <a href="#" class="">交易记录</a>
+                <a href="#" class="">我的账单</a>
             </div>
         </div>
-    <!--top-->
-
+        <div class="fr top-right">
+            <ul>
+                <li class="menu menu-toggle"><a href="#">我的工作台<i class="up"></i></a></li>
+                <li class="menu"><a href="#"><i class="message new"></i>消息</a></li>
+                <li class="menu menu-help"><a href="#">帮助中心</a></li>
+                <li class="menu">
+                    <a href="">网站导航</a>
+                    <div class="top-right-slideNav db-a">
+                        <a href="#">四川能投</a>
+                        <a href="#">物产集采平台</a>
+                        <a href="#">鑫能裕丰</a>
+                        <a href="#">租租网</a>
+                    </div>
+                </li>
+                <li class="menu menu-tel">服务热线 <span class="tel">400-400-4000</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--top-->
+<!--header-->
+<div class="header w1200 cc cb">
+    <a href="#" class="logo fl"><img src="img/logo.png" alt=""></a>
+    <div class="fl title">找货</div>
+</div>
+<!--header-->
+<!--content-->
+<div class="content project-content">
+    <div class="w1200 cc inner">
+        <ul class="process-line process-line-three w1100 cc tac ib-li">
+            <li class="active">
+                <div class="bg">
+                    <span>1</span>
+                </div>
+                <p>填写订单</p>
+            </li>
+            <li class="">
+                <div class="bg">
+                    <span>2</span>
+                </div>
+                <p>平台报价</p>
+            </li>
+            <li class="">
+                <div class="bg">
+                    <span>3</span>
+                </div>
+                <p>采购</p>
+            </li>
+        </ul>
+        <!--form-->
+        <div class="order-form find-form cc form ">
+            <form class="cc" action="">
+                <div class="category">
+                    <div class="category-title">订单信息</div>
+                    <div class="form-items">
+                        <span class="form-items-title"><em class="warming">*</em>收货地址</span>
+                        <div class="item-wrap">
+                            <select name="" id="" class="address normal"><option value="">请选择</option> </select>
+                        </div>
+                        <div class="item-wrap">
+                            <select name="" id="" class="address normal"><option value="">请选择</option> </select>
+                        </div>
+                        <div class="item-wrap">
+                            <select name="" id="" class="address normal"><option value="">请选择</option> </select>
+                        </div>
+                        <div class="item-wrap">
+                            <input type="text " class="address-detail" placeholder="详细地址">
+                        </div>
+                    </div>
+                    <div class="form-items ">
+                        <span class="form-items-title"><em class="warming">*</em>支付方式</span>
+                        <select name="" id="" class="normal">
+                            <option value="">支付方式</option></select>
+                    </div>
+                    <div class="form-items">
+                        <span class="form-otems-titls"><em class="warming">*</em>报名截止时间</span>
+                        <input type="text" class="normal">
+                    </div>
+                    <div class="form-items">
+                        <span class="form-items-title title-small"><em class="warming">*</em>收货人</span>
+                        <input type="text" class="normal name">
+                        <input type="text" class="normal-middle">
+                    </div>
+                </div>
+                <div class="category pt9">
+                    <div class="category-title">采购清单</div>
+                    <div class="form-items">
+                        <span class="form-items-title title-small"><em class="warming">*</em>行业</span>
+                        <select name="" id="" class="normal">
+                            <option value="">钢材采购</option></select>
+                    </div>
+                    <div class="form-items">
+                        <span class="form-items-title title-small"><em class="warming">*</em>货物A</span>
+                        <input type="text" name="" id="" class="normal-big">
+                        <div class="item-wrap-select">
+                            <input type="text" name="" id="">
+                            <select>
+                                <option value="">吨</option></select>
+                        </div>
+                        <a href="javascript:;" class="menu add"></a>
+                        <a href="javascript:;" class="menu delete"></a>
+                    </div>
+                </div>
+                <div class="category pt9">
+                    <div class="category-title">备注</div>
+                    <div class="form-items">
+                        <span class="form-items-title">备注</span>
+                        <textarea name="" class="comment" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="category pt9">
+                    <div class="category-title"></div>
+                    <div class="total">
+                        <p class="total-info">预估总价: <em>7777元</em></p>
+                        <p class="total-text">含:货物A(4444元)+货物B(3333元)</p>
+                        <p class="total-text" >本价格仅供下单参考,实际费用已最终协商为准</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--form-->
+    </div>
+    <div class="form-submit tac">
+        <a href="javascript:;" class="form-submit-menu">提交订单</a>
+    </div>
+</div>
+<!--content-->
 </body>
 </html>
