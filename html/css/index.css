@@ -363,7 +363,7 @@ a {
     padding: 0 4px;
 }
 .footer a{
-    color: #999;
+    color: #fff;
 }
 .footer .cprt{
     margin-top: 11px;
@@ -529,7 +529,7 @@ a {
 }
 .order-form{
     padding-top: 88px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 .form form{
     width: 1090px;
@@ -544,13 +544,9 @@ a {
     font-weight: bold;
 
 }
-.find-form .form-items{
-    width: auto;
-
-}
 .form .form-items{
-    position: relative;
-    width: 840px;
+    width: 100%;
+    min-height: 31px;
     line-height: 31px;
     color: #999;
     margin-bottom: 20px;
@@ -559,7 +555,7 @@ a {
     width: 95px;
     text-align: right;
 }
-.form .form-item-title{
+.form .form-items-title{
     width:100px;
     margin-left: 10px;
     font-size: 14px;
@@ -588,13 +584,389 @@ a {
     width: 135px;
 }
 .form .address{
-    width: 126px;
+    width: 135px;
     margin-right: 20px;
 }
 .form select{
+    width: 135px;
     height: 31px;
     line-height: 31px;
 }
-.form-items span ,.form-items select,.form-items input{
+.form .form-items-title,.form span, .form .item-wrap, .form input[type='text'], .form select, .form .space, .form .unit, .form .menu, .form .item-wrap-select, .form textarea {
     float: left;
+}
+.form .address{
+    margin-right: 20px;
+}
+.form .address-detail{
+    width: 236px;
+}
+.form input{
+    width: 115px;
+    margin-right: 20px;
+}
+.form .unit{
+    padding-left:10px ;
+    width: 50px;
+}
+.form .comment{
+    width:677px;
+    height:82px;
+}
+.form .note{
+    height: 82px ;
+}
+.order-form .total-info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.order-form .total-info em{
+    color: #fc0;
+}
+.order-form .total-text{
+    line-height: 24px;
+    font-size: 12px;
+    color: #333;
+}
+.form-submit{
+    padding: 50px 0;
+}
+.form-submit-menu{
+    display: inline-block;
+    width: 230px;
+    height:45px;
+    line-height: 45px;
+    font-size: 18px;
+    text-align: center;
+    background: #ffd34e;
+    color: #fff;
+    transition: .3s ease-out;
+}
+.form-submit-menu:hover{
+    background:#ffe081;
+}
+.footer.nobg{
+    color: #fff;
+    background: #1b1b1b ;
+}
+.footer a:hover {
+    color: #ffd34e;
+    text-decoration: underline;
+}
+.header-nav{
+    margin-left: 48px;
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 66px;
+}
+.bg000{
+    background: #000;
+}
+.header-nav a{
+    color: #fff;
+    padding: 0 5px;
+}
+.header.h100{
+    height:100px;
+}
+.header.h100 .logo{
+    margin-top: 19px;
+}
+.header-nav li{
+    margin: 0 20px;
+}
+.header-nav a:hover{
+    color: #ffd34e;
+    text-decoration: underline;
+}
+.header-menu{
+    margin-top: 30px;
+    line-height: 40px;
+}
+.header-menu a{
+    color: #fff;
+}
+.header-menu a:hover{
+    color: #ffd34e;
+    text-decoration: underline;
+}
+.mt24{
+    margin-top: 24px;
+}
+.side-nav{
+    text-align: center;
+    background: #313131;
+    color: #fff;
+}
+.side-nav h2{
+    height:38px;
+    line-height: 38px;
+    cursor: default;
+    background: #434343;
+    font-size: 16px;
+}
+.side-nav ul{
+    font-size: 14px;
+    line-height: 34px;
+}
+.side-nav a{
+    display: block;
+    color: #fff;
+}
+.side-nav li{
+    margin:6px 0;
+}
+.side-nav li:hover{
+    background: #ffd34e;
+}
+.controller .ctl-header{
+    height:138px;
+    border: 1px solid #dcdcdc;
+    background: #f5f8fa;
+}
+.controller .ctl-header .ctl-info{
+    width: 414px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.controller .ctl-header .ctl-info .ctl-text{
+    margin-left: 20px;
+}
+.controller .ctl-header .ctl-info .ctl-name{
+    margin-top: 3px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.controller .ctl-header .ctl-info .i-safe.has{
+    background-position: -41px -111px;
+}
+.controller .ctl-header .ctl-info .ctl-name i{
+    margin-left: 14px;
+}
+.controller .ctl-header .ctl-info .i-mb.has{
+    background-position: -35px -83px;
+}
+.controller .ctl-header .ctl-info .ctl-cname{
+    margin-top: 9px;
+    height: 12px;
+    color: #333;
+}
+.controller .ctl-header .ctl-info .ctl-credit{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #f60;
+}
+.controller .ctl-header .ctl-info  .i-help{
+    margin-left: 6px;
+    width:16px;
+    height:14px;
+    background-position: -35px 0;
+}
+.controller .ctl-header .ctl-info i,.controller .ctl-header .ctl-info .i-help{
+    display: inline-block;
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+}
+.controller .ctl-header .ctl-info .ctl-star{
+    margin-top: 6px;
+    height:18px;
+}
+.controller .ctl-header .ctl-info .i-star{
+    background-position: -41px -131px;
+}
+.controller .ctl-header .ctl-info .i-safe{
+    position: relative;
+    top:2px;
+    width:16px;
+    height:20px;
+}
+.controller .ctl-header .ctl-info .i-mb{
+    position: relative;
+    width:12px;
+    height:16px;
+}
+.controller .ctl-header .ctl-info .i-mb.has {
+    background-position: -35px -83px;
+}
+.controller .ctl-header .ctl-info .i-star.has {
+    background-position: -4px -55px;
+}
+.controller .ctl-header .ctl-info .ctl-star i {
+    width: 19px;
+    height: 18px;
+    margin-right: 11px;
+}
+.controller .ctl-header .ctl-info .i-star {
+    background-position: -30px -55px;
+}
+.controller .ctl-header .ctl-line{
+    margin-top: 25px;
+    margin-right: 37px;
+    height:92px;
+    width: 1px;
+    background: #dcdcdc;
+}
+.controller .ctl-header .ctl-total{
+    padding-top: 17px;
+}
+.controller .ctl-header .ctl-total .t-title{
+    padding-left: 9px;
+    font-size: 18px;
+    color: #333;
+}
+.controller .ctl-header .ctl-total .t-info{
+    padding-left: 9px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #333;
+}
+.controller .ctl-header .ctl-total .t-info em{
+    color: #f60;
+}
+.controller .ctl-header .ctl-total .t-info i{
+    padding: 0 45px;
+    color:#333;
+    font-size: 14px;
+}
+.controller .ctl-header .ctl-total .t-btn{
+    margin-top: 18px;
+}
+.controller .ctl-header .ctl-total .t-btn .mr{
+    margin-right: 102px;
+}
+.controller .ctl-header .ctl-total .t-btn a{
+    width: 176px;
+    height:39px;
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background: #ffd34e;
+    transition: .3s ease-out;
+}
+.controller .ctl-mtitle{
+    padding: 40px 0 20px 19px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 2px solid #c9c9c9;
+}
+.controller .ctl-mtitle .more{
+    margin-right: 49px;
+    font-size: 12px;
+    color:#f60;
+}
+.mt25{
+    margin-top: 25px;
+}
+.ctl-progress li{
+    margin-right: 34px;
+    position: relative;
+    width: 308px;
+    height:226px;
+    border: 1px solid #dcdcdc;
+    background: #f5f5f5;
+}
+.ctl-progress .flag{
+    position: absolute;
+    background: #ffd34e;
+    width:55px;
+    height:22px;
+    color: #fff;
+    text-align: center;
+    top:10px;
+    left: 0;
+    line-height: 22px;
+}
+.ctl-progress .p-con{
+    margin-top: 54px;
+    padding-left: 28px;
+    font-size: 12px;
+    line-height: 26px;
+    color: #333;
+}
+.ctl-progress .p-name{
+    font-size: 16px;
+    color: #313131;
+    margin-bottom: 9px;
+}
+.ctl-progress .p-con span{
+    padding-left: 17px;
+}
+.ctl-progress .p-con  em{
+    padding-left: 12px;
+    color: #f60;
+    font-size: 14px;
+}
+.ctl-progress .p-time{
+    text-align: right;
+    padding-right: 24px;
+    margin-top: 11px;
+
+}
+.ctl-progress .p-progress{
+    position: relative;
+    margin: 13px auto;
+    width:270px;
+    height:12px;
+    background: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ctl-progress .lv1{
+    width:148px;
+}
+.ctl-progress .p-progress-inner{
+    background: #ffd34e;
+    position: absolute;
+    height: 100%;
+    top:0;
+    left:0;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.ctl-progress .p-link{
+    text-align: center;
+    margin-top: 13px;
+    font-size: 14px;
+    color: #333;
+}
+.ctl-progress .p-link a{
+    color: #333;
+}
+.ctl-progress .p-link a:hover{
+    color: #f60;
+}
+.ctl-progress .p-link em{
+    padding: 0 55px;
+}
+.ctl-progress .add:hover{
+    color: #ffd34e;
+}
+.ctl-progress .add{
+    position: absolute;
+    width:100px;
+    height:96px;
+    left:50%;
+    margin-left: -50px;
+    top:50%;
+    text-align: center;
+    margin-top: -48px;
+    color: #333;
+}
+.ctl-progress .add i{
+    background: url(../img/menu.png) 0 -286px no-repeat;
+    width:47px;
+    height:47px;
+    display: inline-block;
+}
+.ctl-progress .add span{
+    display: block;
+    font-size: 14px;
+    margin-top: 34px;
+}
+.ctl-progress .add:hover i{
+    background-position: 0 -340px;
 }
